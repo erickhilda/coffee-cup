@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/fonts/VarelaRound-Regular.ttf) format("woff2");
+}
+
 body {
-  @apply min-h-screen m-0 p-0 box-border dark:bg-slate-900;
+  @apply min-h-screen m-0 p-0 box-border dark:bg-smoke-400;
 }

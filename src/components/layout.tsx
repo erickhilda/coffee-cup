@@ -1,15 +1,9 @@
 import Head from "next/head";
-import Navbar from "./navbar";
 
 interface Props {
   title?: string;
   children: React.ReactNode;
 }
-
-const links = [
-  { href: "/topping", label: "topping" },
-  { href: "/ketchup", label: "ketchup" },
-];
 
 const Layout = ({ title, children }: Props) => (
   <>
@@ -19,11 +13,7 @@ const Layout = ({ title, children }: Props) => (
       </Head>
     ) : null}
 
-    <Navbar links={links} />
-
-    <main className="dark:bg-slate-900">
-      <div className="p-6">{children}</div>
-    </main>
+    <main className="h-screen p-6">{children}</main>
   </>
 );
 
