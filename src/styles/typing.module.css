@@ -1,0 +1,45 @@
+.demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.demoTwo {
+  width: 22ch;
+  animation: typing-two 2s steps(22) , blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  transition: all 0.5s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out;
+  transition-property: width, border-color, opacity;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+@keyframes typing-two {
+  from {
+    width: 0;
+  }
+}

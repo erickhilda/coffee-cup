@@ -1,33 +1,30 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Layout from "../components/layout";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <section className="mt-10">
-        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">
-          Story
-        </h2>
-
-        <div className="mt-2">
-          <p className="text-slate-800 dark:text-slate-200">
-            “With grace and dignity” he said to himself.
-            <br />
-            After which he tripped and fell.
-          </p>
-
-          <br />
-
-          <p className="text-sm text-slate-800 dark:text-slate-200">
-            <a
-              href="https://twosentencestories.com/walking-through-life/"
-              className="underline"
-            >
-              Walking through Life
-            </a>
-            , a two sentence story
-          </p>
+      <section className="flex flex-col justify-start items-center px-16">
+        <Image
+          src="/coffee-cup.png"
+          alt="coffee-cup"
+          width={624}
+          height={200}
+          objectFit="contain"
+        />
+        <div className="text-center text-lg w-[80vmin] text-smoke-500">
+          Coffee-cup is a collections of my css-animation works. I love coffee
+          more than any drinks, and beside that i love CSS too. although
+          sometimes it&apos;s painfull to write it from scratch
         </div>
+        {/* <div className="grid grid-cols-4 gap-2 w-full">
+          {animationItems.map(({ id, src }) => (
+            <div key={id} className="bg-smoke-500 rounded-lg">
+              {id}
+            </div>
+          ))}
+        </div> */}
       </section>
     </Layout>
   );
